@@ -23,7 +23,11 @@ class MoviesController extends Controller
         $genres = Http::withToken('***token***')
             ->get('https://api.themoviedb.org/3/genre/movie/list')
             ->json()['genres'];
-
+        
+ $viewModel = new MoviesViewModel(
+            $popularMovies,
+            $genres,
+        );
 
         return view('movies.index', $viewModel);
     }
