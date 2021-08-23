@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\ViewModels\MovieViewModel;
 use App\ViewModels\MoviesViewModel;
 use Illuminate\Support\Facades\Http;
 
